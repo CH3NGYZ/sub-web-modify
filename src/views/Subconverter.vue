@@ -362,8 +362,16 @@ export default {
             label: "自定规则",
             options: [
               {
-                label: "自定规则",
-                value: "https://raw.githubusercontent.com/CH3NGYZ/clash-rules/main/custom.ini"
+                label: "自定-flyingbird",
+                value: "https://raw.githubusercontent.com/CH3NGYZ/clash-rules/main/custom-flyingbird.ini"
+              },
+              {
+                label: "自定-ikuuu",
+                value: "https://raw.githubusercontent.com/CH3NGYZ/clash-rules/main/custom-ikuuu.ini"
+              },
+              {
+                label: "自定-fu",
+                value: "https://raw.githubusercontent.com/CH3NGYZ/clash-rules/main/custom-fu.ini"
               }
             ]
           },
@@ -798,34 +806,34 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: "https://sub.ch3ng.top",
-        shortType: "https://v1.mk/short",
-        remoteConfig: "https://raw.githubusercontent.com/CH3NGYZ/clash-rules/main/custom.ini",
+        shortType: "",
+        remoteConfig: "https://raw.githubusercontent.com/CH3NGYZ/clash-rules/main/custom-flyingbird.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
         rename: "",
         devid: "",
-        interval: "",
+        interval: "21600",
         emoji: true,
         nodeList: false,
         extraset: false,
-        tls13: false,
+        tls13: true,
         udp: true,
-        xudp: false,
-        tfo: false,
+        xudp: true,
+        tfo: true,
         sort: true,
-        expand: true,
-        scv: false,
-        fdn: false,
+        expand: false,
+        scv: true,
+        fdn: true,
         appendType: false,
         insert: false, // 是否插入默认订阅的节点，对应配置项 insert_url
         new_name: true, // 是否使用 Clash 新字段
         tpl: {
           surge: {
-            doh: false // dns 查询是否使用 DoH
+            doh: true // dns 查询是否使用 DoH
           },
           clash: {
-            doh: false
+            doh: true
           },
           singbox: {
             ipv6: false
